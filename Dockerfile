@@ -7,7 +7,7 @@ RUN npm install
 RUN npm run build
 RUN npm run build:css
 
-COPY . .
+COPY */* .
 
 EXPOSE 8080
 
