@@ -43,6 +43,8 @@ const IndexPage = () => (
 					className="rounded-full"
 					src="https://cdn.discordapp.com/avatars/264026681931464704/6cfa1e21765140e9f7edfca5fb54cd85.webp?size=100"
 					alt="my-profile-picture"
+					width={100}
+					height={100}
 				/>
 			</div>
 		</div>
@@ -62,6 +64,8 @@ const IndexPage = () => (
 							className="text-6xl ml-2 w-[40px] h-[40px]"
 							src={icon}
 							alt={"skills-icon-" + index}
+							width={40}
+							height={40}
 						/>
 						<div className="ml-4 my-4">
 							<p className="font-bold">{title}</p>
