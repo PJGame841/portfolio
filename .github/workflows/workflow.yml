@@ -1,4 +1,4 @@
-name: NextJS CI
+name: Run my porfolio
 
 on:
   push:
@@ -9,15 +9,11 @@ jobs:
   build:
     runs-on: self-hosted
 
-    strategy:
-      matrix:
-        node-version: [14.x]
-
     steps:
       - uses: actions/checkout@v1
-      - name: NPM Install
-        run: npm install
-      - name: NextJS & Postcss build
-        run: npm run build && npm run build:css
+      - name: Docker Build
+        run: docker build -t pjgame841/porfolio .
+      - name: Docker push
+        run: docker push pjgame841/porfolio
       - name: Start
-        run: npm start
+        run: docker run -p 80:80 pjgame841/porfolio
