@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: debian-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:
@@ -15,7 +15,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - run: npm install
-      - run: npm run build
-      - run: npm run build:css
-      - run: npm start
+      - name: NPM Install
+        run: npm install
+      - name: NextJS & Postcss build
+        run: npm run build
+        run: npm run build:css
+      - name: Start
+        run: npm start
