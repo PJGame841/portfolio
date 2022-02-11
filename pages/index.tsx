@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BaseSyntheticEvent } from "react";
+import Image from "next/image";
 
 const comp = [
 	{
@@ -30,17 +31,18 @@ const IndexPage = () => (
 					<br /> Pierre-Jean Lefort
 				</p>
 				<p className="text-gray-600 font-light mt-3">
-					I'm a french student in computer science. I love doing web sites and
-					many other things to entertain me.
+					I&apos;m a french student in computer science. I love doing web sites
+					and many other things to entertain me.
 				</p>
 				<button className="bg-sky-300 rounded-lg px-5 py-2 mr-2 font-medium">
 					Contact
 				</button>
 			</div>
 			<div className="absolute mt-80 md:mt-52 ml-[60%] max-w-sm">
-				<img
+				<Image
 					className="rounded-full"
 					src="https://cdn.discordapp.com/avatars/264026681931464704/6cfa1e21765140e9f7edfca5fb54cd85.webp?size=100"
+					alt="my-profile-picture"
 				/>
 			</div>
 		</div>
@@ -56,7 +58,11 @@ const IndexPage = () => (
 						key={index}
 						className="bg-white rounded-lg w-[90%] m-[5%] max-h-[33%] transition-all flex justify-around items-center"
 					>
-						<img className="text-6xl ml-2 w-[40px] h-[40px]" src={icon} />
+						<Image
+							className="text-6xl ml-2 w-[40px] h-[40px]"
+							src={icon}
+							alt={"skills-icon-" + index}
+						/>
 						<div className="ml-4 my-4">
 							<p className="font-bold">{title}</p>
 							<p
