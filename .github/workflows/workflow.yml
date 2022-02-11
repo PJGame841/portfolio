@@ -22,7 +22,7 @@ jobs:
       - name: Docker push
         run: docker push pjgame841/portfolio
       - name: Stop old images
-        run: docker rm $(docker stop $(docker ps -a -q --filter ancestor=pjgame841/portfolio --format="{{.ID}}"))
+        run: docker rm $(docker stop $(docker ps -a -q --filter name=pj_portfolio --format="{{.ID}}"))
         continue-on-error: true
       - name: Start
-        run: docker run -p 8080:8080 -d pjgame841/portfolio
+        run: docker run -p 8080:8080 -d --name=pj_portfolio pjgame841/portfolio
