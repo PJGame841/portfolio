@@ -58,7 +58,7 @@ const IndexPage = () => (
 				{comp.map(({ title, desc, icon }, index) => (
 					<div
 						key={index}
-						className="bg-white rounded-lg w-[90%] m-[5%] max-h-[33%] transition-all flex justify-around items-center"
+						className="bg-white rounded-lg w-90pe m-5pe max-h-[33%] transition-all flex justify-around items-center"
 					>
 						<Image
 							className="text-6xl ml-2 w-[40px] h-[40px]"
@@ -70,7 +70,7 @@ const IndexPage = () => (
 						<div className="ml-4 my-4">
 							<p className="font-bold">{title}</p>
 							<p
-								className="text-gray-600 font-light mt-1 max-w-[90%] max-h-[2rem] transition-all duration-1000 h-auto text-ellipsis overflow-hidden"
+								className="text-gray-600 font-light mt-1 max-w-90pe max-h-8 transition-all duration-1000 h-auto text-ellipsis overflow-hidden"
 								onMouseEnter={(e: BaseSyntheticEvent) => {
 									const p = e.target;
 									p.classList.remove("max-h-[33%]");
