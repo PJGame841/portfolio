@@ -11,26 +11,26 @@
     "eslint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
-    "next": "latest",
+    "@fortawesome/fontawesome-svg-core": "latest",
+    "@fortawesome/free-brands-svg-icons": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@fortawesome/react-fontawesome": "latest",
+    "next": "^12.0.10",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.1.3",
-    "@types/node": "^12.12.21",
-    "@types/react": "^17.0.2",
+    "@types/node": "^12.20.45",
+    "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.1",
-    "autoprefixer": "^10.4.1",
+    "autoprefixer": "^10.4.2",
     "eslint": "8.8.0",
     "eslint-config-next": "12.0.10",
-    "postcss": "^8.4.5",
+    "postcss": "^8.4.6",
     "postcss-cli": "^9.1.0",
-    "postcss-preset-env": "^7.2.0",
-    "tailwindcss": "^3.0.9",
+    "postcss-preset-env": "^7.3.1",
+    "tailwindcss": "^3.0.22",
     "typescript": "4.3.2"
   }
 }
