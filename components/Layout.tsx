@@ -129,7 +129,7 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
 			{children}
 			<footer className="bg-slate-700	text-slate-400">
 				<div className="container mx-auto px-4 flex flex-col gap-y-5 divide-y-2 divide-slate-500">
-					<p className="mt-2">
+					<p className="mt-5">
 						That&apos;s all for this website, thanks for visiting !
 					</p>
 					<div className="flex justify-between items-center">
