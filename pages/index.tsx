@@ -1,25 +1,22 @@
-import Link from "next/link";
 import Layout from "../components/Layout";
-import { faReact, faNodeJs } from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BaseSyntheticEvent } from "react";
 import Image from "next/image";
 
 const comp = [
 	{
 		title: "React",
-		icon: "https://img.icons8.com/ultraviolet/40/000000/react--v2.png",
+		icon: "/img/react.png",
 		desc: "I first learned React to discover new things, but now I use it in every projects I make.",
 	},
 	{
 		title: "NodeJS",
-		icon: "https://img.icons8.com/color/48/000000/nodejs.png",
+		icon: "/img/nodejs.png",
 		desc: "In addition to React, NodeJS is a fair pair to make some APIs, most of the time some REST endpoints, but I've also learnt GraphQL APIs.",
 	},
 	{
 		title: "MongoDB",
-		icon: "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
-		desc: "What I really tried to learn is the MEARN stack",
+		icon: "/img/mongodb.png",
+		desc: "What I really tried to learn was the MEARN stack. So MongoDB was a must for this task",
 	},
 ];
 const IndexPage = () => (
@@ -41,7 +38,7 @@ const IndexPage = () => (
 			<div className="absolute mt-80 md:mt-52 ml-[60%] max-w-sm">
 				<Image
 					className="rounded-full"
-					src="https://cdn.discordapp.com/avatars/264026681931464704/6cfa1e21765140e9f7edfca5fb54cd85.webp?size=100"
+					src="/img/pj.jpg"
 					alt="my-profile-picture"
 					width={100}
 					height={100}

@@ -16,9 +16,9 @@ type Props = {
 
 const pages = [
 	["Home", "/"],
-	["About", "/about"],
-	["Users List", "/users"],
-	["Users API", "/api/users"],
+	["Projects", "/projects"],
+	["About Me", "/about"],
+	["Contact", "/contact"],
 ];
 
 const Layout = ({ children, title = "This is the default title" }: Props) => {
@@ -34,37 +34,23 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
 
 			<div className="hidden flex items-start justify-center mobile-menu absolute w-full h-full bg-zinc-700/90 z-10">
 				<ul className="text-white max-w-xs m-2">
-					<li className="active">
-						<Link href="/">
-							<a className="block text-sm px-2 py-4 bg-sky-300 font-semibold rounded-full text-center">
-								Home
-							</a>
-						</Link>
-					</li>
-					<li>
-						<a
-							href="#services"
-							className="block text-sm px-2 py-4 hover:bg-sky-300 transition duration-300 rounded-full text-center"
-						>
-							Services
-						</a>
-					</li>
-					<li>
-						<a
-							href="#about"
-							className="block text-sm px-2 py-4 hover:bg-sky-300 transition duration-300 rounded-full text-center"
-						>
-							About
-						</a>
-					</li>
-					<li>
-						<a
-							href="#contact"
-							className="block text-sm px-2 py-4 hover:bg-sky-300 transition duration-300 rounded-full text-center"
-						>
-							Contact Us
-						</a>
-					</li>
+					{pages.map(([title, url], key) => (
+						<li className={router.pathname == url ? "active" : ""} key={key}>
+							<Link href={url}>
+								<a
+									className={
+										"block text-sm px-2 py-4 " +
+										(router.pathname == url
+											? "transition duration-300 "
+											: "hover:") +
+										"bg-sky-300 font-semibold rounded-full text-center"
+									}
+								>
+									{title}
+								</a>
+							</Link>
+						</li>
+					))}
 				</ul>
 
 				<button
@@ -109,7 +95,11 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
 					</div>
 					<div className="hidden md:flex">
 						<button className="bg-sky-300 rounded-lg px-5 py-2 mr-2 font-medium">
-							Yee
+							<Link href="https://github.com/PJGame841">
+								<a className="" target="_blank">
+									<FontAwesomeIcon icon={faGithub} />
+								</a>
+							</Link>
 						</button>
 					</div>
 
