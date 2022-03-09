@@ -1,21 +1,25 @@
 import Layout from "../components/Layout";
 import { BaseSyntheticEvent } from "react";
 import Image from "next/image";
+import reactPic from "../public/static/img/react.png";
+import nodejsPic from "../public/static/img/nodejs.png";
+import mongoPic from "../public/static/img/mongodb.png";
+import mePic from "../public/static/img/pj.jpg";
 
 const comp = [
 	{
 		title: "React",
-		icon: "/static/img/react.png",
+		icon: reactPic,
 		desc: "I first learned React to discover new things, but now I use it in every projects I make.",
 	},
 	{
 		title: "NodeJS",
-		icon: "/static/img/nodejs.png",
+		icon: nodejsPic,
 		desc: "In addition to React, NodeJS is a fair pair to make some APIs, most of the time some REST endpoints, but I've also learnt GraphQL APIs.",
 	},
 	{
 		title: "MongoDB",
-		icon: "/static/img/mongodb.png",
+		icon: mongoPic,
 		desc: "What I really tried to learn was the MEARN stack. So MongoDB was a must for this task",
 	},
 ];
@@ -38,7 +42,7 @@ const IndexPage = () => (
 			<div className="absolute mt-80 md:mt-52 ml-[60%] max-w-sm">
 				<Image
 					className="rounded-full"
-					src="/static/img/pj.jpg"
+					src={mePic}
 					alt="my-profile-picture"
 					width={100}
 					height={100}
