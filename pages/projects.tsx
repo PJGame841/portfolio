@@ -7,21 +7,18 @@ const AboutPage = () => (
 			<div className="absolute space-y-4 mt-40 ml-[15%] max-w-sm">
 				<p className="text-gray-800 font-extrabold text-4xl">My projects</p>
 				<p className="text-gray-600 font-light mt-5">
-					Here you can see all the projects I've done in the past
+					Here you can see all the projects I&apos;ve done in the past
 				</p>
 			</div>
 		</div>
 		<div className="timeline">
 			<div className="card left">
-				<div className="date right-32" style={{ right: "-150px" }}>
-					Janvier 2022
-				</div>
+				<div className="date right-32">Jan 2022</div>
 				<i className="icon fa fa-user"></i>
 				<div className="content">
 					<h2>Portfolio</h2>
 					<p>
-						Réalisation de ce portfolio en NextJS, TailwindCSS. Plus
-						d'information sur{" "}
+						I did this porfolio in NextJS, TailwindCSS. More informations on{" "}
 						<a
 							href="https://github.com/PJGame841/portfolio"
 							className="text-cyan-600"
@@ -33,28 +30,24 @@ const AboutPage = () => (
 				</div>
 			</div>
 			<div className="card right">
-				<div className="date" style={{ left: "-150px" }}>
-					Janvier 2022
-				</div>
+				<div className="date">Jan 2022</div>
 				<i className="icon fa fa-gift"></i>
 				<div className="content">
-					<h2>Réservation automatique salle de sport</h2>
+					<h2>Automatic booking at a gym</h2>
 					<p>
-						Simple système de reservation automatique d'une salle de sport.
-						L'action se déclanche par une demande à Google Home
+						Just a simple system of automatic booking for a gym. The action is
+						triggered by voice via Google Home with IFTTT.
 					</p>
 				</div>
 			</div>
 			<div className="card left">
-				<div className="date" style={{ right: "-150px" }}>
-					Novembre 2021
-				</div>
+				<div className="date">Nov 2021</div>
 				<i className="icon fa fa-home"></i>
 				<div className="content">
 					<h2>Gmod-Discord</h2>
 					<p>
-						Un logiciel permettant de relier Garry's Mod à Discord pour montrer
-						sur quel serveur on joue.
+						A software that allows you to link Garry&apos;s Mod to Discord to
+						show to your friends on which server you&apos;re playing.
 					</p>
 				</div>
 			</div>
