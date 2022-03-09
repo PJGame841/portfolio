@@ -5,17 +5,17 @@ import Image from "next/image";
 const comp = [
 	{
 		title: "React",
-		icon: "/img/react.png",
+		icon: "/static/img/react.png",
 		desc: "I first learned React to discover new things, but now I use it in every projects I make.",
 	},
 	{
 		title: "NodeJS",
-		icon: "/img/nodejs.png",
+		icon: "/static/img/nodejs.png",
 		desc: "In addition to React, NodeJS is a fair pair to make some APIs, most of the time some REST endpoints, but I've also learnt GraphQL APIs.",
 	},
 	{
 		title: "MongoDB",
-		icon: "/img/mongodb.png",
+		icon: "/static/img/mongodb.png",
 		desc: "What I really tried to learn was the MEARN stack. So MongoDB was a must for this task",
 	},
 ];
@@ -38,7 +38,7 @@ const IndexPage = () => (
 			<div className="absolute mt-80 md:mt-52 ml-[60%] max-w-sm">
 				<Image
 					className="rounded-full"
-					src="/img/pj.jpg"
+					src="/static/img/pj.jpg"
 					alt="my-profile-picture"
 					width={100}
 					height={100}
