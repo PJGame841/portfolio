@@ -2,6 +2,8 @@
 
 Simplement mon portfolio pour que vous puissez voir comment il est fait !
 
+[![Run my porfolio](https://github.com/PJGame841/portfolio/actions/workflows/workflow.yml/badge.svg?branch=main)](https://github.com/PJGame841/portfolio/actions/workflows/workflow.yml)
+
 ## Technos utilisées
 
 ### Pour le porfolio
