@@ -11,15 +11,20 @@ const AboutPage = () => (
 		</div>
 
 		<div className="flex justify-center">
-			<div className="flex flex-col justify-center items-center	">
-				<p className="text-2xl font-bold text-slate-700">
+			<div className="flex flex-col flex-wrap justify-center items-center overflow-hidden">
+				<p className="text-2xl font-bold text-slate-700 whitespace-normal text-center">
 					Here is a short video about myself (in french)
 				</p>
 				<YouTube
-					className="my-5"
+					className="my-5 hidden md:block"
 					videoId="49xdHhGWRgQ"
 					opts={{ height: "390", width: "640" }}
 				/>
+				<div className="md:hidden mt-2">
+					<a href="https://youtu.be/49xdHhGWRgQ/" className="text-cyan-800">
+						Click here to see the video
+					</a>
+				</div>
 			</div>
 		</div>
 	</Layout>

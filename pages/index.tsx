@@ -5,6 +5,7 @@ import reactPic from "../public/static/img/react.png";
 import nodejsPic from "../public/static/img/nodejs.png";
 import mongoPic from "../public/static/img/mongodb.png";
 import mePic from "../public/static/img/pj.jpg";
+import Link from "next/link";
 
 const comp = [
 	{
@@ -35,9 +36,11 @@ const IndexPage = () => (
 					I&apos;m a french student in computer science. I love doing web sites
 					and many other things to entertain me.
 				</p>
-				<button className="bg-sky-300 rounded-lg px-5 py-2 mr-2 font-medium">
-					Contact
-				</button>
+				<Link href="/contact">
+					<button className="bg-sky-300 rounded-lg px-5 py-2 mr-2 font-medium">
+						Contact
+					</button>
+				</Link>
 			</div>
 			<div className="absolute mt-80 md:mt-52 ml-[60%] max-w-sm">
 				<Image
@@ -49,40 +52,26 @@ const IndexPage = () => (
 				/>
 			</div>
 		</div>
-		<div className="h-[32rem]">
+		<div className="min-h-[32rem]">
 			{/* Compétences */}
-			<div className="absolute mt-16 ml-32 bg-sky-200/50 rounded-lg h-96 w-96 flex flex-col items-center justify-items-center scroll">
-				<p className="mt-2 font-medium text-lg">Skills</p>
-				<p className="absolute mt-12 ml-64 font-medium text-sm text-slate-500	">
-					Hover me !
-				</p>
+			<p className="mt-5 font-medium text-lg w-full text-center">Skills</p>
+			<div className="flex flex-wrap items-center justify-around	">
 				{comp.map(({ title, desc, icon }, index) => (
 					<div
 						key={index}
-						className="bg-white rounded-lg w-90pe m-5pe max-h-[33%] transition-all flex justify-around items-center"
+						className="rounded-lg min-w-[100px] w-90pe max-w-sm m-5pe max-h-[33%] flex flex-wrap justify-around items-center bg-slate-200"
 					>
-						<Image
-							className="text-6xl ml-2 w-[40px] h-[40px]"
-							src={icon}
-							alt={"skills-icon-" + index}
-							width={40}
-							height={40}
-						/>
+						<div className="my-2">
+							<Image
+								src={icon}
+								alt={"skills-icon-" + index}
+								width={40}
+								height={40}
+							/>
+						</div>
 						<div className="ml-4 my-4">
 							<p className="font-bold">{title}</p>
-							<p
-								className="text-gray-600 font-light mt-1 max-w-90pe max-h-8 transition-all duration-1000 h-auto text-ellipsis overflow-hidden"
-								onMouseEnter={(e: BaseSyntheticEvent) => {
-									const p = e.target;
-									p.classList.remove("max-h-[33%]");
-									p.classList.add("max-h-min");
-								}}
-								onMouseLeave={(e: BaseSyntheticEvent) => {
-									const p: HTMLElement = e.target;
-									p.classList.add("max-h-[33%]");
-									p.classList.remove("max-h-min");
-								}}
-							>
+							<p className="text-gray-600 font-light mt-1 max-w-90pe h-auto">
 								{desc}
 							</p>
 						</div>

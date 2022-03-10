@@ -8,6 +8,7 @@ import {
 	faLinkedin,
 	faReact,
 } from "@fortawesome/free-brands-svg-icons";
+import favicon from "../public/static/img/favicon.ico";
 
 type Props = {
 	children?: ReactNode;
@@ -94,13 +95,13 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
 						</div>
 					</div>
 					<div className="hidden md:flex">
-						<button className="bg-sky-300 rounded-lg px-5 py-2 mr-2 font-medium">
-							<Link href="https://github.com/PJGame841">
-								<a className="" target="_blank">
+						<Link href="https://github.com/PJGame841">
+							<a className="" target="_blank">
+								<button className="bg-sky-300 rounded-lg px-5 py-2 mr-2 font-medium">
 									<FontAwesomeIcon icon={faGithub} />
-								</a>
-							</Link>
-						</button>
+								</button>
+							</a>
+						</Link>
 					</div>
 
 					<button

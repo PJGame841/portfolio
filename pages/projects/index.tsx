@@ -1,6 +1,6 @@
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
-const AboutPage = () => (
+const ProjectsPage = () => (
 	<Layout title="Pierre-Jean Lefort | My projects">
 		<div className="h-[23rem] bg-sky-100">
 			<div className="absolute space-y-4 mt-40 ml-[15%] max-w-sm">
@@ -163,4 +163,4 @@ const AboutPage = () => (
 	</Layout>
 );
 
-export default AboutPage;
+export default ProjectsPage;

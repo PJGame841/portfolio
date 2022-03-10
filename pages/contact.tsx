@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 
-const AboutPage = () => (
+const ContactPage = () => (
 	<Layout title="Pierre-Jean Lefort | Contact">
 		<div className="h-[25rem] bg-sky-100">
 			<div className="absolute space-y-4 mt-40 ml-[15%] max-w-sm">
@@ -13,4 +13,4 @@ const AboutPage = () => (
 	</Layout>
 );
 
-export default AboutPage;
+export default ContactPage;
