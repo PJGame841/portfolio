@@ -15,7 +15,7 @@ Simplement mon portfolio pour que vous puissez voir comment il est fait !
 - Github actions, avec un runner sur un VPS
 - Docker, création de l'image, publication, démarrage sur le VPS (https://hub.docker.com/r/pjgame841/portfolio/tags)
 
-Je sais que mettre en place toutes ces différentes choses sont un peu exessives, mais j'ai réalisé ce site dans un but de découvrir les différentes technos.
+Je sais que mettre en place toutes ces différentes choses sont un peu excessives, mais j'ai réalisé ce site dans un but de découvrir les différentes technos.
 
 ## Résultat
 
